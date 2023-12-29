@@ -33,6 +33,10 @@ button,
           user-select: none;
 }
 
+span {
+  font-size: inherit;
+}
+
 .flex {
   display: flex;
 }
@@ -43,6 +47,25 @@ button,
 
 .justify-content-between {
   justify-content: space-between;
+}
+
+.flex-center-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content-px {
+  padding-right: 10vw;
+  padding-left: 10vw;
+}
+
+.header,
+.navbar,
+.main,
+.footer {
+  padding-right: 10vw;
+  padding-left: 10vw;
 }
 
 h1 {
@@ -221,6 +244,23 @@ h6 {
     display: none !important;
   }
 }
+.navbar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar-logo {
+  font-weight: bold;
+  font-size: 2rem;
+}
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+.navbar-nav li:not(:last-child) {
+  margin-right: 2rem;
+}
+
 /* Dropdown z-index 2 olarak tanımlanmıştır. */
 .dropdown {
   position: relative;
@@ -253,14 +293,4 @@ h6 {
 .accordion-item-content {
   overflow-y: hidden;
   transition: height 0.4s ease;
-}
-
-.nav-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.nav-logo {
-  font-weight: bold;
-  font-size: 2rem;
 }/*# sourceMappingURL=style.css.map */

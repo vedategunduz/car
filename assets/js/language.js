@@ -6,7 +6,7 @@ const current_language = localStorage.getItem("language");
 
 // Dil değiştirme fonksiyonu. Varsayılan olarak "en" (İngilizce) dili seçilmiştir.
 // Bu fonksiyon, verilen dil koduna ve yönlendirme bilgisine göre dil dosyasını yükler.
-function change_language(lang = "en", direction = "../../../js/") {
+function change_language(lang = "en", direction = "") {
     localStorage.setItem("language", lang);
 
     fetch(`${direction}languages/${lang}.json`)

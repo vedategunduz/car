@@ -29,6 +29,10 @@ button,
     user-select: none;
 }
 
+span {
+    font-size: inherit;
+}
+
 .flex {
     display: flex;
 }
@@ -39,4 +43,23 @@ button,
 
 .justify-content-between {
     justify-content: space-between;
+}
+
+.flex-center-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content-px {
+    padding-right: $content-main-padding-x;
+    padding-left: $content-main-padding-x;
+}
+
+.header,
+.navbar,
+.main,
+.footer {
+    padding-right: $content-main-padding-x;
+    padding-left: $content-main-padding-x;
 }

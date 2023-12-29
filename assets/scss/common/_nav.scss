@@ -1,0 +1,23 @@
+.navbar {
+    &-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &-logo {
+        font-weight: bold;
+        font-size: 2rem;
+    }
+
+    &-nav {
+        display: flex;
+        align-items: center;
+
+        li {
+            &:not(:last-child) {
+                margin-right: 2rem;
+            }
+        }
+    }
+}
