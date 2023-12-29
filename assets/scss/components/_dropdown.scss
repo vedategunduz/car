@@ -1,0 +1,26 @@
+/* Dropdown z-index 2 olarak tanımlanmıştır. */
+.dropdown {
+    position: relative;
+
+    &-menu {
+        z-index: 2;
+        position: absolute;
+        border-radius: .25rem;
+        padding: .5rem 0;
+
+        .dropdown-item {
+            display: block;
+            width: 100%;
+            text-align: left;
+            padding: .25rem 1rem;
+        }
+
+        &.show {
+            display: block;
+        }
+
+        &:not(.show) {
+            display: none;
+        }
+    }
+}

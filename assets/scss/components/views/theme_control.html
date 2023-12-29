@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../css/style.css">
+</head>
+
+<body>
+
+    <div class="dropdown">
+        <div class="dropdown-btn">
+            <button id="language_btn" type="button" class="btn dropdown-toggle" data-target="menu_language">Language
+                EN</button>
+        </div>
+        <ul id="menu_language" class="dropdown-menu">
+            <li><button class="dropdown-item" onclick="change_language('tr')">Türkçe</button></li>
+            <li><button class="dropdown-item" onclick="change_language('en')">English</button></li>
+            <li><button class="dropdown-item" onclick="change_language('de')">Deutsche</button></li>
+        </ul>
+    </div>
+
+    <button id="change_theme_btn" type="button" onclick="change_page_theme()"></button>
+
+    <script src="../../../js/main.js"></script>
+    <script src="../../../js/language.js"></script>
+</body>
+
+</html>

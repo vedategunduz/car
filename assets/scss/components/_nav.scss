@@ -1,0 +1,12 @@
+.nav {
+    &-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &-logo {
+        font-weight: bold;
+        font-size: 2rem;
+    }
+}
