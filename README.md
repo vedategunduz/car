@@ -1,8 +1,14 @@
 # VECHICLE GALLERY WEB SITE V.1.0.1
 
+<<<<<<< HEAD
 [Visit Page](https://vedategunduz.github.io/car/assets/js/test.html)
 
 ## Folder map
+=======
+[https://vedategunduz.github.io/car/assets/js/test.html](https://vedategunduz.github.io/car/assets/js/test.html)
+
+# Folder map
+>>>>>>> 459acf8c0b266810afd5211f225390cb7bbe6e31
 ```txt
 
 /index.html                         # Ana sayfa
