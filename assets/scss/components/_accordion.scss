@@ -1,0 +1,14 @@
+.accordion {
+
+    &-item {
+        &-header {
+            cursor: pointer;
+            user-select: none;
+        }
+
+        &-content {
+            overflow-y: hidden;
+            transition: height .4s ease;
+        }
+    }
+}

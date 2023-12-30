@@ -1,0 +1,35 @@
+/index.html                         # Ana sayfa
+
+/assets
+    /css
+        style.css                   # Derlenmiş CSS dosyası
+        style.css.map               # CSS harita dosyası (geliştirme sırasında kullanılır, yayınlanmayabilir)
+        style.scss                  # Ana SCSS dosyası
+    /img                            # Resim dosyaları burada bulunabilir
+    /js
+        app.js                      # Ana JavaScript dosyası
+        language.js                 # Dil işlemleri için JavaScript dosyası
+        /modules
+            accordion.mjs           # Akordion modülü
+            capitalize.mjs          # Metni büyük harfe dönüştüren modül
+            dropdown.mjs            # Dropdown modülü
+            language.mjs            # Dil modülü
+            theme.mjs               # Tema modülü
+        /lang
+            en.json                 # İngilizce dil dosyası
+            tr.json                 # Türkçe dil dosyası
+            de.json                 # Almanca dil dosyası
+    /scss
+        /common
+            _nav.scss               # Navigasyon bileşeni stilleri
+            _reboot.scss            # Sıfırlama (reset) stilleri
+            _responsive.scss        # Duyarlılık (responsive) stilleri
+            _utilities.scss         # Yardımcı stiller
+            _variables.scss         # Değişkenler
+        /components
+            _accordion.scss         # Akordion bileşeni stilleri
+            _dropdown.scss          # Dropdown bileşeni stilleri
+            _theme.scss             # Tema kontrol bileşeni stilleri
+            /views
+                accordion.html      # Akordion bileşeni HTML şablonu
+
