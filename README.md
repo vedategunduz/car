@@ -1,11 +1,10 @@
-# VECHICLE GALLERY WEB SITE V.1.0.1
+# Vehicle Gallery Website v1.0.2 release.
 
 # URL
 [https://vedategunduz.github.io/car/](https://vedategunduz.github.io/car/)
 
 # Folder map
 ```txt
-
 /index.html                         # Ana sayfa
 
 /assets
@@ -15,7 +14,6 @@
         style.scss                  # Ana SCSS dosyası
     /img                            # Resim dosyaları burada bulunabilir
     /js
-        test.html                   # JavaScript dosyalarını test etmek için geçici bir HTML dosyası
         main.js                     # Ana JavaScript dosyası
         language.js                 # Dil işlemleri için JavaScript dosyası
         /lang
@@ -38,6 +36,4 @@
                 dropdown.html       # Dropdown bileşeni HTML şablonu
                 nav.html            # Navigasyon bileşeni HTML şablonu
                 theme_control.html  # Tema kontrol bileşeni HTML şablonu
-
-
 ```
