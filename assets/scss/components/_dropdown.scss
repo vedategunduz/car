@@ -3,6 +3,7 @@
     position: relative;
 
     &-menu {
+        border: 1px solid rgba(0, 0, 0, .15);
         z-index: 2;
         position: absolute;
         border-radius: .25rem;
@@ -21,6 +22,19 @@
 
         &:not(.show) {
             display: none;
+        }
+    }
+
+    &.white {
+        .dropdown-menu {
+            background-color: #FFFFFF;
+
+            .dropdown-item {
+
+                &:hover {
+                    background-color: #F1F1F1;
+                }
+            }
         }
     }
 }

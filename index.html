@@ -9,35 +9,19 @@
 </head>
 
 <body>
-    <!-- Main navigation -->
-    <nav class="nav">
-        <header class="nav-header">
-            <section>
-                <div class="dropdown">
-                    <div class="dropdown-btn">
-                        <button id="language_btn" type="button" class="btn dropdown-toggle"
-                            data-target="menu_language">Language
-                            EN</button>
-                    </div>
-                    <ul id="menu_language" class="dropdown-menu">
-                        <li><button class="change_language_btn dropdown-item"
-                                onclick="change_language('tr', 'assets')">Türkçe</button></li>
-                        <li><button class="change_language_btn dropdown-item"
-                                onclick="change_language('en', 'assets')">English</button></li>
-                        <li><button class="change_language_btn dropdown-item"
-                                onclick="change_language('de', 'assets')">Deutsche</button>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <section>
-                <button id="theme_btn" type="button" onclick="change_page_theme()" >Patates</button>
-            </section>
-        </header>
-    </nav>
 
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/language.js"></script>
+    <div class="dropdown white">
+        <button id="language_btn" class="dropdown-toggle" data-target="language_dropdown">Language EN</button>
+        <div id="language_dropdown" class="dropdown-menu">
+            <button class="dropdown-item" data-lang-value="tr">Türkçe</button>
+            <button class="dropdown-item" data-lang-value="en">English</button>
+            <button class="dropdown-item" data-lang-value="de">Deutsche</button>
+        </div>
+    </div>
+
+    <button id="change_theme_btn">Click Me</button>
+
+    <script type="module" src="assets/js/app.js"></script>
 </body>
 
 </html>
