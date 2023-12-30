@@ -1,9 +1,6 @@
 # VECHICLE GALLERY WEB SITE V.1.0.1
 
-[Visit Page](https://vedategunduz.github.io/car/assets/js/test.html)
-
-## URL
-=======
+# URL
 [https://vedategunduz.github.io/car/](https://vedategunduz.github.io/car/)
 
 # Folder map
