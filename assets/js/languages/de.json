@@ -1,0 +1,15 @@
+{
+    "lang": "de",
+    "theme_mode": {
+      "light": "hellmodus",
+      "dark": "dunkelmodus"
+    },
+    "language": "Sprache der Seite",
+    "navbar": [
+      "Startseite",
+      "Werkzeuge",
+      "Über uns",
+      "Kontakt",
+      "Registrieren"
+    ]
+  }

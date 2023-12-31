@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nav Page</title>
     <link rel="stylesheet" href="../../../css/style.css">
 </head>
 
@@ -27,7 +27,7 @@
         <div class="navbar-logo">
             vedategunduz
         </div>
-        <button class="open" data-target="asideNavbar" type="button">Open</button>
+        <button class="open display-desktop-none" data-target="asideNavbar" type="button">Open</button>
         <aside id="asideNavbar" class="aside-navbar">
             <header class="header navbar-header">
                 <div class="navbar-logo">
@@ -36,12 +36,58 @@
                 <button class="close" type="button" data-target="asideNavbar">Close</button>
             </header>
             <ul class="navbar-nav">
-                <li><a href="">Page 1</a></li>
-                <li><a href="">Page 2</a></li>
-                <li><a href="">Page 3</a></li>
-                <li><a href="">Page 4</a></li>
-                <li><a href="">Page 5</a></li>
+                <li><a href=""><span>Home</span></a></li>
+                <li>
+                    <button class="open" type="button" data-target="asideCars">
+                        <div class="flex-center-between">
+                            <span>Cars</span>
+                            <div class="display-desktop-none"> > </div>
+                        </div>
+                    </button>
+                </li>
+                <li><a href=""><span>About</span></a></li>
+                <li><a href=""><span>Contact</span></a></li>
+                <li><a href=""><span>Sign Up</span></a></li>
             </ul>
+        </aside>
+    </nav>
+
+    <nav class="navbar">
+        <aside id="asideCars" class="aside-navbar desktop-menu">
+            <header class="navbar-header">
+                <div class="navbar-logo">
+                    vedategunduz
+                </div>
+                <button class="close" type="button" data-target="asideCars">Close</button>
+            </header>
+            <section class="accordion">
+                <div class="accordion-item">
+                    <button type="button" class="accordion-item-button">McLaren</button>
+                    <ul class="accordion-item-content">
+                        <li><a href="#">ARTURA</a></li>
+                        <li><a href="#">720S SPİDER</a></li>
+                        <li><a href="#">P1</a></li>
+                        <li><a href="#">SENNA</a></li>
+                        <li><a href="#">ELVA</a></li>
+                        <li><a href="#">SPEEDTAİL</a></li>
+                        <li><a href="#">765LT</a></li>
+                        <li><a href="#">GT</a></li>
+                    </ul>
+                </div>
+                <div class="accordion-item">
+                    <button type="button" class="accordion-item-button">Porsche</button>
+                    <ul class="accordion-item-content">
+                        <li><a href="#">Taycan</a></li>
+                        <li><a href="#">918 Spyder</a></li>
+                        <li><a href="#">Boxster</a></li>
+                        <li><a href="#">Cayman</a></li>
+                        <li><a href="#">911</a></li>
+                        <li><a href="#">Panamera</a></li>
+                        <li><a href="#">Cayenne</a></li>
+                        <li><a href="#">911 GT3</a></li>
+                    </ul>
+                </div>
+            </section>
         </aside>
     </nav>
 

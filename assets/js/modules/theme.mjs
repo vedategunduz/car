@@ -76,6 +76,18 @@ export function set_theme_text_based_on_language() {
             document.getElementById("change_theme_btn").innerText = "Koyu Tema";
         }
     }
+    // Dil kontrolü: Eğer kullanıcının tercih ettiği dil "de" (Almanca) ise:
+    else if (selected_language == "de") {
+        // Themenprüfung: Wenn die vom Benutzer bevorzugte Thema "light_mode" (hellmodus) ist:
+        if (selected_theme == "light_mode") {
+            // Wenn der helle Modus auf Türkisch aktiv ist, den Text des Themenbuttons auf "Hellmodus" setzen.
+            document.getElementById("change_theme_btn").innerText = "Hellmodus";
+        } else {
+            // Wenn der dunkle Modus auf Türkisch aktiv ist, den Text des Themenbuttons auf "Dunkelmodus" setzen.
+            document.getElementById("change_theme_btn").innerText = "Dunkelmodus";
+        }
+    }
+
 }
 
 // "change_theme_btn" id'ye sahip elementin tıklanma olayını dinle

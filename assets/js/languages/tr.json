@@ -4,5 +4,12 @@
         "light": "açık tema",
         "dark": "koyu tema"
     },
-    "language": "sayfa dili"
+    "language": "sayfa dili",
+    "navbar": [
+        "anasayfa",
+        "araçlar",
+        "hakkımızda",
+        "iletişim",
+        "Kayıt ol"
+    ]
 }

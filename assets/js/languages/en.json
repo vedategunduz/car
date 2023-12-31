@@ -4,5 +4,12 @@
         "light": "light mode",
         "dark": "dark mode"
     },
-    "language": "language"
+    "language": "language",
+    "navbar": [
+        "home",
+        "cars",
+        "about",
+        "contact",
+        "sign up"
+    ]
 }

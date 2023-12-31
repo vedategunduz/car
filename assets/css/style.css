@@ -239,11 +239,43 @@ h6 {
   padding: 3rem;
 }
 
+.navbar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar-logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
 @media only screen and (min-width: 992px) {
   .navbar .aside-navbar header.header {
     display: none;
   }
-  .navbar .open {
+  .navbar .aside-navbar.desktop-menu {
+    position: absolute;
+    top: 0;
+    width: 50vw;
+    min-height: 100vh;
+    z-index: 2;
+    transition: 0.2s;
+    background-color: #FCFCFC;
+    border-right: 1px solid #EFEFEF;
+  }
+  .navbar .aside-navbar.desktop-menu header.navbar-header {
+    padding: calc(2rem + 25px) 2rem 2rem 10vw;
+  }
+  .navbar .aside-navbar.desktop-menu:not(.show) {
+    left: -50vw;
+    visibility: hidden;
+  }
+  .navbar .aside-navbar.desktop-menu.show {
+    left: 0;
+    visibility: visible;
+  }
+  .navbar .display-desktop-none {
     display: none;
   }
   .navbar-nav {
@@ -264,9 +296,8 @@ h6 {
     transition: 0.2s;
     background-color: #FCFCFC;
   }
-  .navbar .aside-navbar header.header {
-    padding-top: calc(2rem + 25px);
-    padding-bottom: 2rem;
+  .navbar .aside-navbar header.navbar-header {
+    padding: calc(2rem + 25px) 10vw 2rem;
   }
   .navbar .aside-navbar:not(.show) {
     left: -100vw;
@@ -277,9 +308,36 @@ h6 {
     visibility: visible;
   }
   .navbar-nav {
-    display: block;
     padding-left: 10vw;
     padding-right: 10vw;
+  }
+  .navbar-nav li:not(:last-child) {
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .navbar-nav li a,
+  .navbar-nav li button {
+    width: 100%;
+    display: block;
+    padding: 1rem 0;
+  }
+  .navbar .accordion {
+    padding-left: 10vw;
+    padding-right: 10vw;
+    overflow: auto;
+  }
+  .navbar .accordion-item-button {
+    border-bottom: 1px solid #EFEFEF;
+    width: 100%;
+    padding: 1rem 0;
+    text-align: left;
+  }
+  .navbar .accordion-item-content {
+    padding-left: 1rem;
+  }
+  .navbar .accordion-item-content li a {
+    display: block;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #EFEFEF;
   }
 }
 /*
@@ -291,17 +349,6 @@ nav.navbar
             li
                 a
 */
-.navbar-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.navbar-logo {
-  font-weight: bold;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-}
-
 /* Dropdown z-index 2 olarak tanımlanmıştır. */
 .dropdown {
   position: relative;

@@ -37,6 +37,11 @@ export function change_language(lang, direction = "../../../js/") {
         })
         .then(data => {
             language_btn.innerText = `${capitalize(data.language)}` + ` ${data.lang}`.toUpperCase();
+            const navbar_nav_items = document.querySelectorAll(".navbar-nav li span");
+
+            for (let i = 0; i < navbar_nav_items.length; i++) {
+                navbar_nav_items[i].innerText = capitalize(data.navbar[i]);
+            }
         })
     // Sayfa dili değiştirildiğinde, seçilen dil temelinde, tema butonu'nun metnini düzenler.
     set_theme_text_based_on_language();
