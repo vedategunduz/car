@@ -26,11 +26,6 @@ html {
             }
 
             .navbar {
-                .aside-navbar {
-                    background-color: $light-body;
-                    color: $light-text-color;
-                }
-
                 &-nav {
                     li {
                         &:not(:last-child) {
@@ -70,11 +65,6 @@ html {
             }
 
             .navbar {
-                .aside-navbar {
-                    background-color: $dark-body;
-                    color: $dark-text-color;
-                }
-
                 &-nav {
                     li {
                         &:not(:last-child) {
@@ -93,6 +83,30 @@ html {
                             border-bottom: 1px solid rgba($color: $dark-text-color, $alpha: .1);
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) {}
+
+@media only screen and (max-width: 991.98px) {
+    html {
+        &.light-mode {
+            body .navbar {
+                .aside-navbar {
+                    background-color: $light-body;
+                    color: $light-text-color;
+                }
+            }
+        }
+
+        &.dark-mode {
+            body .navbar {
+                .aside-navbar {
+                    background-color: $dark-body;
+                    color: $dark-text-color;
                 }
             }
         }

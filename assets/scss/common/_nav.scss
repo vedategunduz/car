@@ -10,6 +10,33 @@
         font-size: 1.5rem;
         text-transform: uppercase;
     }
+
+    .desktop-menu {
+        box-shadow: .25rem 0 1rem rgba(0, 0, 0, .4);
+    }
+
+    .accordion {
+        padding-left: $content-main-padding-x;
+        padding-right: $content-main-padding-x;
+        overflow: auto;
+
+        &-item {
+            &-button {
+                width: 100%;
+                padding: 1rem 0;
+                text-align: left;
+            }
+
+            &-content {
+                padding-left: 1rem;
+
+                li a {
+                    display: block;
+                    padding: .5rem 0;
+                }
+            }
+        }
+    }
 }
 
 // Desktop
@@ -23,19 +50,17 @@
             &.desktop-menu {
                 position: absolute;
                 top: 0;
-                width: 50vw;
+                width: 40vw;
                 min-height: 100vh;
                 z-index: 2;
                 transition: .2s;
-                background-color: #FCFCFC;
-                border-right: 1px solid #EFEFEF;
 
                 header.navbar-header {
                     padding: calc($content-main-padding-y + 25px) 2rem $content-main-padding-y 10vw;
                 }
 
                 &:not(.show) {
-                    left: -50vw;
+                    left: -40vw;
                     visibility: hidden;
                 }
 
@@ -97,6 +122,7 @@
             padding-right: $content-main-padding-x;
 
             li {
+
                 a,
                 button {
                     width: 100%;
@@ -106,6 +132,7 @@
             }
         }
 
+        /*
         .accordion {
             padding-left: $content-main-padding-x;
             padding-right: $content-main-padding-x;
@@ -128,6 +155,6 @@
                     }
                 }
             }
-        }
+        }*/
     }
 }
