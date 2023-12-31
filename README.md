@@ -1,4 +1,4 @@
-# Vehicle Gallery Website v1.0.2 release.
+# Vehicle Gallery Website v1.1.3 release.
 
 # URL
 [https://vedategunduz.github.io/car/](https://vedategunduz.github.io/car/)
@@ -34,10 +34,10 @@
             _reboot.scss            # Sıfırlama (reset) stilleri
             _utilities.scss         # Yardımcı stiller
             _variables.scss         # Değişkenler
+            _theme.scss             # Tema kontrol bileşeni stilleri
         /components
             _accordion.scss         # Akordion bileşeni stilleri
             _dropdown.scss          # Dropdown bileşeni stilleri
-            _theme.scss             # Tema kontrol bileşeni stilleri
             /views
                 nav.html            # Navigasyon bileşeni HTML dosyası
 ```

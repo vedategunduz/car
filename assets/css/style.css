@@ -17,6 +17,7 @@ html {
 a {
   text-decoration: none;
   font-size: inherit;
+  color: inherit;
 }
 
 button,
@@ -71,6 +72,57 @@ span {
 .footer {
   padding-right: 10vw;
   padding-left: 10vw;
+}
+
+html.light-mode body {
+  color: #34495e;
+  background-color: #ecf0f1;
+}
+html.light-mode body header {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+}
+html.light-mode body nav {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+}
+html.light-mode body .navbar .aside-navbar {
+  background-color: #ecf0f1;
+  color: #34495e;
+}
+html.light-mode body .navbar-nav li:not(:last-child) {
+  border-bottom: 1px solid rgba(52, 73, 94, 0.1);
+}
+html.light-mode body .navbar .accordion-item-button {
+  border-bottom: 1px solid rgba(52, 73, 94, 0.1);
+}
+html.light-mode body .navbar .accordion-item-content li a {
+  border-bottom: 1px solid rgba(52, 73, 94, 0.1);
+}
+html.dark-mode body {
+  color: #bdc3c7;
+  background-color: #1a1a1a;
+}
+html.dark-mode body header {
+  background-color: #121212;
+  color: #bdc3c7;
+}
+html.dark-mode body nav {
+  background-color: #121212;
+  color: #bdc3c7;
+}
+html.dark-mode body .navbar .aside-navbar {
+  background-color: #1a1a1a;
+  color: #bdc3c7;
+}
+html.dark-mode body .navbar-nav li:not(:last-child) {
+  border-bottom: 1px solid rgba(189, 195, 199, 0.1);
+}
+html.dark-mode body .navbar .accordion-item-button {
+  border-bottom: 1px solid rgba(189, 195, 199, 0.1);
+}
+html.dark-mode body .navbar .accordion-item-content li a {
+  border-bottom: 1px solid rgba(189, 195, 199, 0.1);
 }
 
 h1 {
@@ -311,9 +363,6 @@ h6 {
     padding-left: 10vw;
     padding-right: 10vw;
   }
-  .navbar-nav li:not(:last-child) {
-    border-bottom: 1px solid #f0f0f0;
-  }
   .navbar-nav li a,
   .navbar-nav li button {
     width: 100%;
@@ -340,15 +389,6 @@ h6 {
     border-bottom: 1px solid #EFEFEF;
   }
 }
-/*
-nav.navbar
-    div.navbar-logo
-        vedategunduz
-    aside.aside-navbar
-        ul.navbar-nav
-            li
-                a
-*/
 /* Dropdown z-index 2 olarak tanımlanmıştır. */
 .dropdown {
   position: relative;
@@ -375,6 +415,9 @@ nav.navbar
 .dropdown.white .dropdown-menu {
   background-color: #FFFFFF;
 }
+.dropdown.white .dropdown-menu .dropdown-item {
+  color: #333;
+}
 .dropdown.white .dropdown-menu .dropdown-item:hover {
   background-color: #F1F1F1;
 }
@@ -387,5 +430,5 @@ nav.navbar
 }
 .accordion-item-content {
   overflow-y: hidden;
-  transition: height 0.4s ease;
+  transition: height 0.2s ease;
 }/*# sourceMappingURL=style.css.map */

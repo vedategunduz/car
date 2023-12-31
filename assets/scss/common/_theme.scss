@@ -1,0 +1,100 @@
+// Light Theme
+$light-body: #ecf0f1;
+$light-text-color: #34495e;
+$light-header-nav: #2c3e50;
+$light-footer: #f39c12;
+// Dark Theme
+$dark-body: #1a1a1a;
+$dark-text-color: #bdc3c7;
+$dark-header-nav: #121212;
+$dark-footer: #2c3e50;
+
+html {
+    &.light-mode {
+        body {
+            color: $light-text-color;
+            background-color: $light-body;
+
+            header {
+                background-color: $light-header-nav;
+                color: $light-body;
+            }
+
+            nav {
+                background-color: $light-header-nav;
+                color: $light-body;
+            }
+
+            .navbar {
+                .aside-navbar {
+                    background-color: $light-body;
+                    color: $light-text-color;
+                }
+
+                &-nav {
+                    li {
+                        &:not(:last-child) {
+                            border-bottom: 1px solid rgba($color: $light-text-color, $alpha: .1);
+                        }
+                    }
+                }
+
+                .accordion {
+                    &-item {
+                        &-button {
+                            border-bottom: 1px solid rgba($color: $light-text-color, $alpha: .1);
+                        }
+
+                        &-content li a {
+                            border-bottom: 1px solid rgba($color: $light-text-color, $alpha: .1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.dark-mode {
+        body {
+            color: $dark-text-color;
+            background-color: $dark-body;
+
+            header {
+                background-color: $dark-header-nav;
+                color: $dark-text-color;
+            }
+
+            nav {
+                background-color: $dark-header-nav;
+                color: $dark-text-color;
+            }
+
+            .navbar {
+                .aside-navbar {
+                    background-color: $dark-body;
+                    color: $dark-text-color;
+                }
+
+                &-nav {
+                    li {
+                        &:not(:last-child) {
+                            border-bottom: 1px solid rgba($color: $dark-text-color, $alpha: .1);
+                        }
+                    }
+                }
+
+                .accordion {
+                    &-item {
+                        &-button {
+                            border-bottom: 1px solid rgba($color: $dark-text-color, $alpha: .1);
+                        }
+
+                        &-content li a {
+                            border-bottom: 1px solid rgba($color: $dark-text-color, $alpha: .1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

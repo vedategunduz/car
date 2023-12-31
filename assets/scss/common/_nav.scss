@@ -97,10 +97,6 @@
             padding-right: $content-main-padding-x;
 
             li {
-                &:not(:last-child) {
-                    border-bottom: 1px solid #f0f0f0;
-                }
-
                 a,
                 button {
                     width: 100%;
@@ -135,13 +131,3 @@
         }
     }
 }
-
-/*
-nav.navbar
-    div.navbar-logo
-        vedategunduz
-    aside.aside-navbar
-        ul.navbar-nav
-            li
-                a
-*/
