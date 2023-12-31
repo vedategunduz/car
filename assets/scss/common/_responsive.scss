@@ -1,3 +1,51 @@
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+    .navbar {
 
-@media only screen and (max-width: 991.98px) {}
+        .aside-navbar {
+            header.header {
+                display: none;
+            }
+        }
+
+        &-nav {
+            display: flex;
+            align-items: center;
+
+            li {
+                &:not(:last-child) {
+                    margin-right: 2rem;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991.98px) {
+    .navbar {
+        .aside-navbar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            min-height: 100vh;
+            z-index: 2;
+            background-color: #F0F0F0;
+        }
+
+        &-nav {
+            display: block;
+            padding-left: $content-main-padding-x;
+            padding-right: $content-main-padding-x;
+        }
+    }
+}
+
+/*
+nav.navbar
+    div.navbar-logo
+        vedategunduz
+    aside.aside-navbar
+        ul.navbar-nav
+            li
+                a
+*/

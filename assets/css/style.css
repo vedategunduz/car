@@ -234,6 +234,43 @@ h6 {
   padding: 3rem;
 }
 
+@media only screen and (min-width: 992px) {
+  .navbar .aside-navbar header.header {
+    display: none;
+  }
+  .navbar-nav {
+    display: flex;
+    align-items: center;
+  }
+  .navbar-nav li:not(:last-child) {
+    margin-right: 2rem;
+  }
+}
+@media only screen and (max-width: 991.98px) {
+  .navbar .aside-navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    min-height: 100vh;
+    z-index: 2;
+    background-color: #F0F0F0;
+  }
+  .navbar-nav {
+    display: block;
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+}
+/*
+nav.navbar
+    div.navbar-logo
+        vedategunduz
+    aside.aside-navbar
+        ul.navbar-nav
+            li
+                a
+*/
 .navbar-header {
   display: flex;
   align-items: center;
@@ -241,15 +278,8 @@ h6 {
 }
 .navbar-logo {
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
-}
-.navbar-nav {
-  display: flex;
-  align-items: center;
-}
-.navbar-nav li:not(:last-child) {
-  margin-right: 2rem;
 }
 
 /* Dropdown z-index 2 olarak tanımlanmıştır. */
