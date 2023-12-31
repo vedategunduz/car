@@ -86,9 +86,6 @@ html.light-mode body nav {
   background-color: #2c3e50;
   color: #ecf0f1;
 }
-html.light-mode body .navbar-nav li:not(:last-child) {
-  border-bottom: 1px solid rgba(52, 73, 94, 0.1);
-}
 html.light-mode body .navbar .accordion-item-button {
   border-bottom: 1px solid rgba(52, 73, 94, 0.1);
 }
@@ -107,9 +104,6 @@ html.dark-mode body nav {
   background-color: #121212;
   color: #bdc3c7;
 }
-html.dark-mode body .navbar-nav li:not(:last-child) {
-  border-bottom: 1px solid rgba(189, 195, 199, 0.1);
-}
 html.dark-mode body .navbar .accordion-item-button {
   border-bottom: 1px solid rgba(189, 195, 199, 0.1);
 }
@@ -117,14 +111,30 @@ html.dark-mode body .navbar .accordion-item-content li a {
   border-bottom: 1px solid rgba(189, 195, 199, 0.1);
 }
 
+@media only screen and (min-width: 992px) {
+  html.light-mode body .navbar .aside-navbar.desktop {
+    background-color: #ecf0f1;
+    color: #34495e;
+  }
+  html.dark-mode body .navbar .aside-navbar.desktop {
+    background-color: #1a1a1a;
+    color: #bdc3c7;
+  }
+}
 @media only screen and (max-width: 991.98px) {
   html.light-mode body .navbar .aside-navbar {
     background-color: #ecf0f1;
     color: #34495e;
   }
+  html.light-mode body .navbar-nav li:not(:last-child) {
+    border-bottom: 1px solid rgba(52, 73, 94, 0.1);
+  }
   html.dark-mode body .navbar .aside-navbar {
     background-color: #1a1a1a;
     color: #bdc3c7;
+  }
+  html.dark-mode body .navbar-nav li:not(:last-child) {
+    border-bottom: 1px solid rgba(189, 195, 199, 0.1);
   }
 }
 h1 {
@@ -359,32 +369,6 @@ h6 {
   }
 }
 @media only screen and (max-width: 991.98px) {
-  .navbar {
-    /*
-    .accordion {
-        padding-left: $content-main-padding-x;
-        padding-right: $content-main-padding-x;
-        overflow: auto;
-
-        &-item {
-            &-button {
-                border-bottom: 1px solid #EFEFEF;
-                width: 100%;
-                padding: 1rem 0;
-                text-align: left;
-            }
-
-            &-content {
-                padding-left: 1rem;
-                li a{
-                    display: block;
-                    padding: .5rem 0;
-                    border-bottom: 1px solid #EFEFEF;
-                }
-            }
-        }
-    }*/
-  }
   .navbar .aside-navbar {
     position: absolute;
     top: 0;

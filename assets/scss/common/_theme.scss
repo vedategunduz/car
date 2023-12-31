@@ -26,14 +26,6 @@ html {
             }
 
             .navbar {
-                &-nav {
-                    li {
-                        &:not(:last-child) {
-                            border-bottom: 1px solid rgba($color: $light-text-color, $alpha: .1);
-                        }
-                    }
-                }
-
                 .accordion {
                     &-item {
                         &-button {
@@ -65,14 +57,6 @@ html {
             }
 
             .navbar {
-                &-nav {
-                    li {
-                        &:not(:last-child) {
-                            border-bottom: 1px solid rgba($color: $dark-text-color, $alpha: .1);
-                        }
-                    }
-                }
-
                 .accordion {
                     &-item {
                         &-button {
@@ -89,7 +73,29 @@ html {
     }
 }
 
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+    html {
+        &.light-mode {
+            body .navbar {
+                .aside-navbar.desktop {
+                    background-color: $light-body;
+                    color: $light-text-color;
+                }
+            }
+        }
+
+        &.dark-mode {
+            body .navbar {
+                .aside-navbar.desktop {
+                    background-color: $dark-body;
+                    color: $dark-text-color;
+                }
+
+
+            }
+        }
+    }
+}
 
 @media only screen and (max-width: 991.98px) {
     html {
@@ -99,6 +105,14 @@ html {
                     background-color: $light-body;
                     color: $light-text-color;
                 }
+
+                &-nav {
+                    li {
+                        &:not(:last-child) {
+                            border-bottom: 1px solid rgba($color: $light-text-color, $alpha: .1);
+                        }
+                    }
+                }
             }
         }
 
@@ -107,6 +121,14 @@ html {
                 .aside-navbar {
                     background-color: $dark-body;
                     color: $dark-text-color;
+                }
+
+                &-nav {
+                    li {
+                        &:not(:last-child) {
+                            border-bottom: 1px solid rgba($color: $dark-text-color, $alpha: .1);
+                        }
+                    }
                 }
             }
         }
