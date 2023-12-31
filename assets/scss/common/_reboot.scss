@@ -56,6 +56,11 @@ span {
     padding-left: $content-main-padding-x;
 }
 
+.content-py {
+    padding-top: $content-main-padding-y;
+    padding-bottom: $content-main-padding-y;
+}
+
 .header,
 .navbar,
 .main,

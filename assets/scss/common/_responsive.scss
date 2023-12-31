@@ -1,3 +1,4 @@
+// Desktop
 @media only screen and (min-width: 992px) {
     .navbar {
 
@@ -5,6 +6,10 @@
             header.header {
                 display: none;
             }
+        }
+
+        .open {
+            display: none;
         }
 
         &-nav {
@@ -20,16 +25,32 @@
     }
 }
 
+// Mobile
 @media only screen and (max-width: 991.98px) {
     .navbar {
         .aside-navbar {
             position: absolute;
             top: 0;
-            left: 0;
             width: 100vw;
             min-height: 100vh;
             z-index: 2;
-            background-color: #F0F0F0;
+            transition: .2s;
+            background-color: #FCFCFC;
+
+            header.header {
+                padding-top: calc($content-main-padding-y + 25px);
+                padding-bottom: calc($content-main-padding-y);
+            }
+
+            &:not(.show) {
+                left: -100vw;
+                visibility: hidden;
+            }
+
+            &.show {
+                left: 0;
+                visibility: visible;
+            }
         }
 
         &-nav {

@@ -60,6 +60,11 @@ span {
   padding-left: 10vw;
 }
 
+.content-py {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .header,
 .navbar,
 .main,
@@ -238,6 +243,9 @@ h6 {
   .navbar .aside-navbar header.header {
     display: none;
   }
+  .navbar .open {
+    display: none;
+  }
   .navbar-nav {
     display: flex;
     align-items: center;
@@ -250,11 +258,23 @@ h6 {
   .navbar .aside-navbar {
     position: absolute;
     top: 0;
-    left: 0;
     width: 100vw;
     min-height: 100vh;
     z-index: 2;
-    background-color: #F0F0F0;
+    transition: 0.2s;
+    background-color: #FCFCFC;
+  }
+  .navbar .aside-navbar header.header {
+    padding-top: calc(2rem + 25px);
+    padding-bottom: 2rem;
+  }
+  .navbar .aside-navbar:not(.show) {
+    left: -100vw;
+    visibility: hidden;
+  }
+  .navbar .aside-navbar.show {
+    left: 0;
+    visibility: visible;
   }
   .navbar-nav {
     display: block;

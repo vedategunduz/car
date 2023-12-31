@@ -23,16 +23,17 @@
         <button id="change_theme_btn">button_text</button>
     </header>
 
-    <nav class="navbar flex-center-between">
+    <nav class="navbar flex-center-between content-py">
         <div class="navbar-logo">
             vedategunduz
         </div>
-        <aside class="aside-navbar">
+        <button class="open" data-target="asideNavbar" type="button">Open</button>
+        <aside id="asideNavbar" class="aside-navbar">
             <header class="header navbar-header">
                 <div class="navbar-logo">
                     vedategunduz
                 </div>
-                <button>Close</button>
+                <button class="close" type="button" data-target="asideNavbar">Close</button>
             </header>
             <ul class="navbar-nav">
                 <li><a href="">Page 1</a></li>

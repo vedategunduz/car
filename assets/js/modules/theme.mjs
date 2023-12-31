@@ -78,6 +78,8 @@ export function set_theme_text_based_on_language() {
     }
 }
 
+// "change_theme_btn" id'ye sahip elementin tıklanma olayını dinle
 document.getElementById("change_theme_btn").addEventListener("click", () => {
+    // "change_page_theme" fonksiyonunu çağır
     change_page_theme();
 });
