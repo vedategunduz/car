@@ -92,7 +92,7 @@
         </section>
     </main>
 
-    <button id="mute_control_button" type="button" onclick="mute_control()">Muted</button>
+    <button id="mute_control_button" type="button" onclick="mute_control()">&#128263;</button>
 
     <script type="module" src="assets/js/app.js"></script>
     <script>
@@ -107,11 +107,11 @@
         function mute_control() {
             if (document.getElementById("sign_up_video").muted) {
                 document.getElementById("sign_up_video").muted = false;
-                document.getElementById("mute_control_button").innerText = "Unmuted"
+                document.getElementById("mute_control_button").innerHTML = "&#128265;"
             }
             else {
                 document.getElementById("sign_up_video").muted = true
-                document.getElementById("mute_control_button").innerText = "Muted"
+                document.getElementById("mute_control_button").innerHTML = "&#128263;"
             }
         }
     </script>
