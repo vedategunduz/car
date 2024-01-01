@@ -36,6 +36,7 @@ export function change_language(lang, direction = "assets/js/") {
             }
         })
         .then(data => {
+            document.documentElement.setAttribute("lang", data.lang);
             language_btn.innerText = `${capitalize(data.language)}` + ` ${data.lang}`.toUpperCase();
             const navbar_nav_items = document.querySelectorAll(".navbar-nav li span");
 

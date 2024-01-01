@@ -9,7 +9,7 @@
     position: fixed;
     right: 5vw;
     top: 10vh;
-    background-color: rgba($light-body, .1);
+    background-color: rgba($dark-body, 1);
     backdrop-filter: blur(1rem);
     color: #FFFFFF;
     padding: .5rem 1rem;
@@ -23,12 +23,9 @@
     justify-content: center;
 
     .form-content {
-        border: 1px solid rgba($color: $light-text-color, $alpha: .1);
-        color: #FFFFFF;
-        border-radius: .125rem;
-        padding: 2rem 1rem;
-        background-color: rgba($light-body, .1);
-        backdrop-filter: blur(1rem);
+        border-radius: .25rem;
+        padding: 4rem 2rem 2rem;
+        //backdrop-filter: blur(1rem);
 
         form {
             .show {
@@ -53,7 +50,8 @@
                     border: 0;
                     padding: .75rem 0;
                     border-radius: .125rem;
-                    text-indent: 1rem;
+                    text-indent: 2rem;
+                    font-size: .9rem;
 
                     &:focus {
                         outline: none;
@@ -80,12 +78,27 @@
 
 @media only screen and (min-width: 992px) {
     .form-content {
-        width: 25vw;
+        width: 20vw;
     }
 }
 
 @media only screen and (max-width: 991.98px) {
     .form-content {
         width: 90vw;
+    }
+}
+
+html {
+    &.light-mode {
+        .form-content {
+            color: #010101;
+            background-color: $light-header-nav;
+        }
+    }
+    &.dark-mode {
+        .form-content {
+            color: #FFF;
+            background-color: $dark-body;
+        }
     }
 }
