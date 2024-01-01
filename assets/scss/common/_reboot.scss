@@ -69,3 +69,21 @@ span {
     padding-right: $content-main-padding-x;
     padding-left: $content-main-padding-x;
 }
+
+.text-underline {
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-color: inherit;
+}
+
+.text-capitalize {
+    text-transform: capitalize;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-lowercase {
+    text-transform: lowercase;
+}

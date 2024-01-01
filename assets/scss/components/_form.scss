@@ -1,0 +1,91 @@
+#sign_up_video {
+    position: fixed;
+    min-width: 100vw;
+    min-height: 100vh;
+    z-index: -1;
+}
+
+#mute_control_button {
+    position: fixed;
+    right: 5vw;
+    bottom: 5vw;
+    background-color: rgba($light-body, .1);
+    backdrop-filter: blur(1rem);
+    color: #FFFFFF;
+    padding: .5rem 1rem;
+    border-radius: .125rem;
+}
+
+.form-wrapper {
+    height: calc(100vh - 41px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .form-content {
+        border: 1px solid rgba($color: $light-text-color, $alpha: .1);
+        color: #FFFFFF;
+        border-radius: .125rem;
+        padding: 2rem 1rem;
+        background-color: rgba($light-body, .1);
+        backdrop-filter: blur(1rem);
+
+        form {
+            .show {
+                display: block;
+            }
+
+            &:not(.show) {
+                display: none;
+            }
+        }
+
+        .form-group {
+            margin-bottom: .25rem;
+
+            input {
+                margin-bottom: .75rem;
+
+                &[type=text],
+                &[type=password],
+                &[type=email] {
+                    width: 100%;
+                    border: 0;
+                    padding: .75rem 0;
+                    border-radius: .125rem;
+                    text-indent: 1rem;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+
+            button[type=submit] {
+                background-color: #e74c3c;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                font-weight: bold;
+                padding: .75rem 1.5rem;
+                border-radius: .125rem;
+                transition: .2s;
+
+                &:hover {
+                    opacity: .7;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .form-content {
+        width: 25vw;
+    }
+}
+
+@media only screen and (max-width: 991.98px) {
+    .form-content {
+        width: 90vw;
+    }
+}

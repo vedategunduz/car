@@ -1,3 +1,9 @@
+.page-control-buttons {
+    button {
+        padding: .5rem 0;
+    }
+}
+
 .navbar {
     &-header {
         display: flex;
@@ -56,7 +62,7 @@
                 transition: .2s;
 
                 header.navbar-header {
-                    padding: calc($content-main-padding-y + 25px) 2rem $content-main-padding-y 10vw;
+                    padding: calc($content-main-padding-y + 41px) 2rem $content-main-padding-y 10vw;
                 }
 
                 &:not(.show) {
@@ -103,7 +109,7 @@
             background-color: #FCFCFC;
 
             header.navbar-header {
-                padding: calc($content-main-padding-y + 25px) 10vw $content-main-padding-y;
+                padding: calc($content-main-padding-y + 41px) 10vw $content-main-padding-y;
             }
 
             &:not(.show) {

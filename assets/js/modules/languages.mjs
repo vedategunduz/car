@@ -25,7 +25,7 @@ language_change_buttons.forEach(button => {
 
 // Dil değiştirme fonksiyonu. Varsayılan olarak "en" (İngilizce) dili seçilmiştir.
 // Bu fonksiyon, verilen dil koduna ve yönlendirme bilgisine göre dil dosyasını yükler.
-export function change_language(lang, direction = "../../../js/") {
+export function change_language(lang, direction = "assets/js/") {
     (lang == null) ? lang = "en" : lang = lang;
     localStorage.setItem("language", lang);
 

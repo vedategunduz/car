@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sıgn Up Page</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!--
+        Audi
+        https://cdn.discordapp.com/attachments/1175449786565009490/1175851627790471228/audi1.mp4
+        Ford
+        https://cdn.discordapp.com/attachments/1175449786565009490/1175822125806915594/mustang69.mp4
+        McLaren
+        https://cdn.discordapp.com/attachments/1175449786565009490/1176079268883730462/mclaren.mp4
+    -->
+
+    <video id="sign_up_video" loop muted autoplay disablePictureInPicture
+        src="https://cdn.discordapp.com/attachments/1175449786565009490/1176079268883730462/mclaren.mp4"></video>
+
+    <header class="header flex-center-between page-control-buttons">
+        <div class="dropdown white">
+            <button id="language_btn" class="dropdown-toggle" data-target="language_dropdown">button_text</button>
+            <div id="language_dropdown" class="dropdown-menu">
+                <button class="dropdown-item" data-lang-value="tr">Türkçe</button>
+                <button class="dropdown-item" data-lang-value="en">English</button>
+                <button class="dropdown-item" data-lang-value="de">Deutsche</button>
+            </div>
+        </div>
+
+        <button id="change_theme_btn">button_text</button>
+    </header>
+    <main>
+        <section class="form-wrapper">
+            <section class="form-content">
+                <!-- !SIGN IN FORM -->
+                <form action="" id="sign_in" class="show">
+                    <h3 class="text-uppercase">Sıgn In</h3>
+                    <div class="form-group">
+                        <input type="email" name="email" id="sign_in_email" placeholder="E-Mail" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" name="password" id="sign_in_password" placeholder="Password" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" name="remember" id="sign_in_checkbox" checked>
+                        <label for="sign_in_checkbox">Remember Me</label>
+                    </div>
+                    <div class="form-group">
+                        <a href="" class="text-underline">Forgot Password</a>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Sıgn In</button>
+                    </div>
+                    <div class="form-group text-center">
+                        <button type="button" onclick="show_form_sign_up()" class="text-underline">Not a remember
+                            yet?</button>
+                    </div>
+                </form>
+                <!-- !SIGN UP FORM -->
+                <form action="" id="sign_up">
+                    <h3 class="text-uppercase">Sıgn Up</h3>
+                    <div class="form-group">
+                        <input type="text" name="name" id="sign_up_text" placeholder="Name and Lastname" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" id="sign_up_email" placeholder="E-Mail" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" name="password" id="sign_up_password" placeholder="Password" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" name="repeat_password" id="sign_up_password_repeat"
+                            placeholder="Repeat Password" required>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Sıgn Up</button>
+                    </div>
+                    <div class="form-group text-center">
+                        <button type="button" onclick="show_form_sign_in()" class="text-underline">Already a
+                            member?</button>
+                    </div>
+                </form>
+                <div class="text-center">
+                    <a href="index.html" class="text-underline">Homepage</a>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <button id="mute_control_button" type="button" onclick="mute_control()">Muted</button>
+
+    <script type="module" src="assets/js/app.js"></script>
+    <script>
+        function show_form_sign_in() {
+            document.getElementById("sign_in").classList.add("show");
+            document.getElementById("sign_up").classList.remove("show");
+        }
+        function show_form_sign_up() {
+            document.getElementById("sign_in").classList.remove("show");
+            document.getElementById("sign_up").classList.add("show");
+        }
+        function mute_control() {
+            if (document.getElementById("sign_up_video").muted) {
+                document.getElementById("sign_up_video").muted = false;
+                document.getElementById("mute_control_button").innerText = "Unmuted"
+            }
+            else {
+                document.getElementById("sign_up_video").muted = true
+                document.getElementById("mute_control_button").innerText = "Muted"
+            }
+        }
+    </script>
+</body>
+
+</html>

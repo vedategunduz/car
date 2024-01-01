@@ -74,6 +74,24 @@ span {
   padding-left: 10vw;
 }
 
+.text-underline {
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-color: inherit;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
 html.light-mode body {
   color: #34495e;
   background-color: #ecf0f1;
@@ -303,6 +321,10 @@ h6 {
   padding: 3rem;
 }
 
+.page-control-buttons button {
+  padding: 0.5rem 0;
+}
+
 .navbar-header {
   display: flex;
   align-items: center;
@@ -347,7 +369,7 @@ h6 {
     transition: 0.2s;
   }
   .navbar .aside-navbar.desktop-menu header.navbar-header {
-    padding: calc(2rem + 25px) 2rem 2rem 10vw;
+    padding: calc(2rem + 41px) 2rem 2rem 10vw;
   }
   .navbar .aside-navbar.desktop-menu:not(.show) {
     left: -40vw;
@@ -379,7 +401,7 @@ h6 {
     background-color: #FCFCFC;
   }
   .navbar .aside-navbar header.navbar-header {
-    padding: calc(2rem + 25px) 10vw 2rem;
+    padding: calc(2rem + 41px) 10vw 2rem;
   }
   .navbar .aside-navbar:not(.show) {
     left: -100vw;
@@ -442,4 +464,84 @@ h6 {
 .accordion-item-content {
   overflow-y: hidden;
   transition: height 0.2s ease;
+}
+
+#sign_up_video {
+  position: fixed;
+  min-width: 100vw;
+  min-height: 100vh;
+  z-index: -1;
+}
+
+#mute_control_button {
+  position: fixed;
+  right: 5vw;
+  bottom: 5vw;
+  background-color: rgba(236, 240, 241, 0.1);
+  -webkit-backdrop-filter: blur(1rem);
+          backdrop-filter: blur(1rem);
+  color: #FFFFFF;
+  padding: 0.5rem 1rem;
+  border-radius: 0.125rem;
+}
+
+.form-wrapper {
+  height: calc(100vh - 41px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-wrapper .form-content {
+  border: 1px solid rgba(52, 73, 94, 0.1);
+  color: #FFFFFF;
+  border-radius: 0.125rem;
+  padding: 2rem 1rem;
+  background-color: rgba(236, 240, 241, 0.1);
+  -webkit-backdrop-filter: blur(1rem);
+          backdrop-filter: blur(1rem);
+}
+.form-wrapper .form-content form .show {
+  display: block;
+}
+.form-wrapper .form-content form:not(.show) {
+  display: none;
+}
+.form-wrapper .form-content .form-group {
+  margin-bottom: 0.25rem;
+}
+.form-wrapper .form-content .form-group input {
+  margin-bottom: 0.75rem;
+}
+.form-wrapper .form-content .form-group input[type=text], .form-wrapper .form-content .form-group input[type=password], .form-wrapper .form-content .form-group input[type=email] {
+  width: 100%;
+  border: 0;
+  padding: 0.75rem 0;
+  border-radius: 0.125rem;
+  text-indent: 1rem;
+}
+.form-wrapper .form-content .form-group input[type=text]:focus, .form-wrapper .form-content .form-group input[type=password]:focus, .form-wrapper .form-content .form-group input[type=email]:focus {
+  outline: none;
+}
+.form-wrapper .form-content .form-group button[type=submit] {
+  background-color: #e74c3c;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.125rem;
+  transition: 0.2s;
+}
+.form-wrapper .form-content .form-group button[type=submit]:hover {
+  opacity: 0.7;
+}
+
+@media only screen and (min-width: 992px) {
+  .form-content {
+    width: 25vw;
+  }
+}
+@media only screen and (max-width: 991.98px) {
+  .form-content {
+    width: 90vw;
+  }
 }/*# sourceMappingURL=style.css.map */
