@@ -4,21 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index Page</title>
+    <title>Contact Page</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-    <style>
-        .swiper {
-            width: 100%;
-            height: 100dvh;
-            margin: 0;
-        }
-
-        .swiper-button-prev,
-        .swiper-button-next {
-            color: white;
-        }
-    </style>
 </head>
 
 <body>
@@ -116,27 +103,33 @@
         </aside>
     </nav>
 
-    <main class="flex">
-        <!-- Slider main container -->
-        <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                    <img src="assets/img/mclaren_car_wp.jpg" width="100%" height="100%" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img src="assets/img/maserati_wp.jpg" width="100%" height="100%" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img src="assets/img/porsche_wp.jpg" width="100%" height="100%" alt="">
-                </div>
-            </div>
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+    <main class="content-px content-py flex">
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9857974.350943882!2d-24.274832741375175!3d52.899248489373115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x25a3b1142c791a9%3A0xc4f8a0433288257a!2zQmlybGXFn2lrIEtyYWxsxLFr!5e0!3m2!1str!2str!4v1704537115895!5m2!1str!2str"
+                width="600" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
+        <div class="pl-3">
+            <h3>Bizimle iletişime nasıl geçebilirsin?</h3>
+            <p>
+                Genel sorularınız için lütfen Misafir İlişkileri Ekibimizle iletişime geçin.
+                <br>
+                TEL: +44 (0) 1483 261500
+                <br>
+                EMAIL: guest.relations@mclaren.com
+            </p>
+            <br>
+            <h3>Birleşik Krallık</h3>
+            <p>
+                24 Saat Telefon Numarası: +1 855-202-8815
+                <br>
+                Email support: 9am - 5pm EST
+                <br>
+                Email: customerservice.na@mclaren.com
+            </p>
+        </div>
+
     </main>
 
     <footer class="pt-5" style="background-color:#ecf0f1;">
@@ -186,25 +179,6 @@
     </footer>
 
     <script type="module" src="assets/js/app.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-        const swiper = new Swiper('.swiper', {
-            // Optional parameters
-            direction: 'horizontal',
-            loop: true,
-            autoplay: {
-                delay: 2000
-            },
-
-            // If we need pagination
-
-            // Navigation arrows
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            }
-        });
-    </script>
 </body>
 
 </html>

@@ -32,6 +32,9 @@ export function initialize_close_button_click() {
         button.addEventListener("click", function () {
             // Her "close" butonuna tıklandığında overflow kontrolünü azalt
             overflow_control--;
+            // Bug fixed
+            if(window.innerWidth > 992)
+                overflow_control = 0;
 
             // Tıklanan butonun hedef elementini al
             const target = document.getElementById(this.dataset.target);

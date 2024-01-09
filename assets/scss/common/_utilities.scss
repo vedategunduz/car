@@ -23,16 +23,40 @@
     .p#{$key} {
         padding: $value;
     }
+
     .pt-#{$key} {
-        padding: $value;
+        padding-top: $value;
     }
+
     .pb-#{$key} {
-        padding: $value;
+        padding-bottom: $value;
     }
+
     .pl-#{$key} {
-        padding: $value;
+        padding-left: $value;
     }
+
     .pr-#{$key} {
-        padding: $value;
+        padding-right: $value;
+    }
+
+    .m#{$key} {
+        margin: $value;
+    }
+
+    .mt-#{$key} {
+        margin-top: $value;
+    }
+
+    .mb-#{$key} {
+        margin-bottom: $value;
+    }
+
+    .ml-#{$key} {
+        margin-left: $value;
+    }
+
+    .mr-#{$key} {
+        margin-right: $value;
     }
 }
