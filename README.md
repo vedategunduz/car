@@ -1,4 +1,4 @@
-# Vehicle Gallery Website v1.1.4 release.
+# Vehicle Gallery Website v1.2.5 release.
 
 # URL
 [https://vedategunduz.github.io/car/](https://vedategunduz.github.io/car/)
